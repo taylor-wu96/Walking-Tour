@@ -19,10 +19,10 @@ self.addEventListener("install", (e) => {
   e.waitUntil(
     caches.open("store").then((cache) => {
       return cache.addAll([
-        "https://taylor-wu96.github.io/After-Sixth-Fuel-Depot/",
-        "https://taylor-wu96.github.io/After-Sixth-Fuel-Depot/index.html",
-        "https://taylor-wu96.github.io/After-Sixth-Fuel-Depot/icons",
-        "https://taylor-wu96.github.io/After-Sixth-Fuel-Depot/service-worker.js",
+        "https://taylor-wu96.github.io/Walking-Tour/",
+        "https://taylor-wu96.github.io/Walking-Tour/index.html",
+        "https://taylor-wu96.github.io/Walking-Tour/icons",
+        "https://taylor-wu96.github.io/Walking-Tour/service-worker.js",
       ]);
     })
   );
