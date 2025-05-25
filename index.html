@@ -90,6 +90,31 @@
         overflow: hidden;
         /* pointer-events: none */
       }
+      #home-button {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        width: 60px;
+        height: 60px;
+
+        background-color: #1b1d1d;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 40px;
+        cursor: pointer;
+        z-index: 1000;
+        user-select: none;
+        transition: background-color 0.3s ease;
+      }
+      #home-button:hover {
+        background-color: #000000;
+      }
     </style>
   </head>
   <body>
@@ -98,7 +123,7 @@
       src="https://thesixfuelfactorydocumenta2025.web.nycu.edu.tw/2025/04/26/走讀頭前溪"
       sandbox="allow-scripts allow-forms"
       allowfullscreen></iframe>
-
+    <div id="home-button">回首頁</div>
     <script>
       // Register service worker for PWA functionality
       if ("serviceWorker" in navigator) {
